@@ -1,0 +1,29 @@
+# A continuación mostramos una serie de ejemplos de las sentencias de MongoDB.
+# Estas sentencias se han utilizado para la inserción de los registros de las actividades turísticas.
+#-----------------------------------------------------------------------------------------------------
+#Inserción de registros:
+db.ficha_producto.insert({_id: "13", titulo: "MALLORCA HOLIDAY", descripcion: 
+"Al elegir este tour los participantes visitarán el lugar dónde se filmó la famosa película 
+“El Mago” en 1967, con Anthony Quinn, Michael Caine y Candice Bergen. La arena dorada y fina, 
+rodeada de aguas cristalinas y acantilados cubiertos por pinos, transportará a los participantes 
+a los años dorados de Hollywood. La ruta también pasa por Magaluf bordeando los bosques y campos de 
+golf hasta llegar a la bahía de Portals Vells.", incluye: "Alquiler de scooter, guía multilingüe, 
+seguro básico, asistencia en ruta, botella de agua, mapa de la ciudad, casco y candados", 
+no_incluye: "", proveedor: "COOLTRA MOTOS", lugar: "Mallorca", web: "", fotos: "", telefono: "", 
+email: "", youtube: "", precio_adulto: "50", precio_acompanante: "", precio_nino: "", precio_bebe: "", 
+individual: "Individual", precio_especial: "NO", producto_disponible_desde: "41725", producto_disponible_hasta: "42094", 
+dias_operacion: "J, D", duracion: "3 horas", geolocalizacion: "", categoria: "Circuitos y Visitas", 
+idioma: "Castellano.Ingles.Alemán", tipo_viajero: "Jovenes. Adultos sin niños. Senior. LGTB", requisitos: "", 
+itinerario: "Playa de Palma – Coll den Rabassa – Palma de Mallorca – Génova – Calvia – Magaluff – Portals Vels", 
+apto_ninos: "", material: "", servicios_incluidos: "", curso: "NO", minimo_personas: "2", 
+maximo_personas: "No hay", nivel: "", picnic_incluido: "", incluye_monitor: "SI", tiempo_antelacion_reserva: "24 horas", 
+edad_minima: "No hay"})
+#-----------------------------------------------------------------------------------------------------
+#Asignación de TIPO DE OCIO.
+#
+#
+#
+#-----------------------------------------------------------------------------------------------------
+
+
+
