@@ -1,3 +1,33 @@
+#----------------------------------------------------------------------------------------------------------------
+instalar_librerias<-function(){
+install.packages(c("devtools", "rjson", "bit64", "httr","tm","twitteR","plyr","wordcloud","RColorBrewer","NLP","datasets","graphics","stringr"))
+library(plyr)
+library(devtools)
+library(twitteR)
+library(NLP)
+library(RColorBrewer)
+library(tm)
+library(wordcloud)
+library(stringr)
+install_github("twitteR", username="geoffjentry")
+}
+#---------------------------------------------------------------------------------------------------------------
+conexion_twitter <- function() {
+library(plyr)
+library(devtools)
+library(twitteR)
+library(NLP)
+library(RColorBrewer)
+library(tm)
+library(wordcloud)
+library(stringr)
+api_key <- "Q3gXOnuWGyG93ihrFMz9bdDMQ"
+api_secret <- "HIyLjYMS7TB2mnD0kUi450U0EhwRI3h3bxEFxz7aiONF5NTMA1"
+access_token <- "812221945-Qt88IVtuSYRAnt9Z8GG1oUQqF5ehHcVd00AyU5Vu"
+access_token_secret <- "0HVm7qDaL2XA3jVYH9Utz8nbqmc0cyuHj63xtFRfUNltf"
+setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
+}
+#---------------------------------------------------------------------------------------------------------------
 #--------------------------------	
 #Importación librerías 
 #--------------------------------		
@@ -52,144 +82,31 @@
 #--------------------------------------------------------------
 #ARRAYS DE HASHTAGS
 #--------------------------------------------------------------
-hashtags <-c(
-		"turismo",
-		"arte",
-		"viaje",
-		"compras",
-		"concierto",
-		"cultura",
-		"gym",
-		"spa",
-		"deporte",
-		"entradas",
-		"travel",
-		"evento",
-		"run",
-		"running",
-		"relax",
-		"teatre",
-		"teatro",
-		"tour",
-		"familia",
-		"finde",
-		"fiesta",
-		"festa",
-		"restaurante",
-		"shopping",
-		"gastronomia",
-		"golf",
-		"hotel",
-		"vacaciones",
-		"marineland",
-		"moda",
-		"musica",
-		"museo",
-		"museu",
-		"ocio",
-		"ofertas",
-		"paseo",
-		"palma",
-		"party",
-		"planes",
-		"walk",
-		"walking",
-		"aventura",
-		"divertido",
-		"entretenimiento",
-		"cine",
-		"peli",
-		"pelicula",
-		"mar",
-		"montaña",
-		"playa",
-		"niños",
-		"regalos",
-		"salir")
+hashtags <-c("turismo", "arte",	"viaje","compras","concierto","cultura","gym","spa","deporte","entradas","travel",
+		"evento", "run","running","relax","teatre","teatro","tour","familia","finde","fiesta","festa","restaurante",
+		"shopping","gastronomia","golf","hotel","vacaciones","marineland","moda","musica","museo","museu","ocio",
+		"ofertas","paseo","palma","party","planes","walk","walking","aventura","divertido","entretenimiento",
+		"cine",	"peli", "pelicula","mar", "montaña","playa","niños","regalos","salir")
 
-pobles <-c(
-"palma",
-"alaro",
-"alcudia",
-"port",
-"algaida",
-"pina",
-"andratx",
-"andratx",
-"ariany",
-"arta",
-"banyalbufar",
-"binissalem",
-"bunyola",
-"orient",
-"calvia",
-"palma",
-"magaluf",
-"palmanova",
-"peguera",
-"portals",
-"santaponça",
-"mallorca",
-"campanet",
-"campos",
-"capdepera",
-"costitx",
-"deia",
-"lluc",
-"esporles",
-"estellencs",
-"felanitx",
-"portocolom",
-"fornalutx",
-"inca",
-"lloret",
-"lloseta",
-"llubi",
-"llucmajor",
-"manacor",
-"portocristo",
-"mancor",
-"maria",
-"marratxi",
-"cabaneta",
-"portol",
-"montuiri",
-"muro",
-"petra",
-"pobla",
-"pollença",
-"porreres",
-"puigpunyent",
-"galilea",
-"salines ",
-"consell ",
-"picafort",
-"santanyi",
-"portopetro",
-"sencelles",
-"sineu",
-"soller",
-"valldemossa",
-"vilafranca")
+pobles <-c("palma", "alaro","alcudia","port","algaida","pina","andratx","ariany","arta","banyalbufar","binissalem",
+"bunyola","orient","calvia","palma","magaluf","palmanova","peguera","portals","santaponça","mallorca","campanet",
+"campos","capdepera","costitx","deia","lluc","esporles","estellencs","felanitx","portocolom","fornalutx","inca",
+"lloret","lloseta","llubi","llucmajor","manacor","portocristo","mancor","maria","marratxi","cabaneta","portol","montuiri",
+"muro","petra","pobla","pollença","porreres","puigpunyent","galilea","salines ","consell ","picafort","santanyi",
+"portopetro","sencelles","sineu","soller","valldemossa","vilafranca")
 
 #-------------------------------------------------------------------------
 #INTRODUCIR A VAR EL NOMBRE DEL ARRAY DE BÚSQUEDA (pobles o hashtags)
 #-------------------------------------------------------------------------
                            var=hashtags;
 #-------------------------------------------------------------------------
-
-	long=length(var)
-
+long=length(var)
 
 for(r in 1:long){        #iniciO del bucle principal
-
 	hashtag=var[r];
-
 	TweetNumber=100;
-
 	#Iniciamos la extracción de información, centramos la búsqueda en el centre de Mallorca geo="39.6169,2.9715 con un radio de 65Km
 	tweets = searchTwitter(hashtag, TweetNumber, geo="39.6169,2.9715,65km")
-
 	dades = do.call("rbind", lapply(tweets, as.data.frame))
 	COMENTARIOS=dades$text
 
@@ -198,11 +115,9 @@ for(r in 1:long){        #iniciO del bucle principal
 #-------------------------------------------------------------------
 
  HASHTAG=character(TweetNumber);
-
 	for(y in 1:TweetNumber){
 		HASHTAG[y]=var[r]
 	}
-
 #------------------------------------------------------------------------
 #                          ANÀLISIS DE SENTIMIENTOS
 #-------------------------------------------------------------------------
