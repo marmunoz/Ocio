@@ -19,11 +19,15 @@ apto_ninos: "", material: "", servicios_incluidos: "", curso: "NO", minimo_perso
 maximo_personas: "No hay", nivel: "", picnic_incluido: "", incluye_monitor: "SI", tiempo_antelacion_reserva: "24 horas", 
 edad_minima: "No hay"})
 #-----------------------------------------------------------------------------------------------------
-#Asignación de TIPO DE OCIO.
+# Asignación de TIPO DE OCIO.
 #
 #
 #
 #-----------------------------------------------------------------------------------------------------
+# Validación de que el tweet contenga URL o que contenga una fecha.
 
 
+
+
+#-----------------------------------------------------------------------------------------------------
 
