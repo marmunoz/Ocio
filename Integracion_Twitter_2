@@ -1,0 +1,40 @@
+# Funciones para extraer e insertar en MongoDB
+#---------------------------------------------------------------------------------
+instalar_librerias<-function(){
+install.packages(c("devtools", "rjson", "bit64", "httr","tm","twitteR","plyr","wordcloud","RColorBrewer","NLP","datasets","graphics","stringr"))
+library(plyr)
+library(devtools)
+library(twitteR)
+library(NLP)
+library(RColorBrewer)
+library(tm)
+library(wordcloud)
+library(stringr)
+install_github("twitteR", username="geoffjentry")
+}
+#---------------------------------------------------------------------------------
+conexion_twitter <- function() {
+api_key <- "Q3gXOnuWGyG93ihrFMz9bdDMQ"
+api_secret <- "HIyLjYMS7TB2mnD0kUi450U0EhwRI3h3bxEFxz7aiONF5NTMA1"
+access_token <- "812221945-Qt88IVtuSYRAnt9Z8GG1oUQqF5ehHcVd00AyU5Vu"
+access_token_secret <- "0HVm7qDaL2XA3jVYH9Utz8nbqmc0cyuHj63xtFRfUNltf"
+setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
+}
+#---------------------------------------------------------------------------------
+capturar_tweets <- function (palabra_clave,nro_tweets) {
+# Guardando la palabra clave para excluirla de analisis
+write.csv(palabra_clave, file = "C:/BTT/resultados/palabraclave.csv")
+#
+# Guardando datos de fecha y hora de captura de datos
+fechahora<-paste(substr(Sys.time(),1,4),substr(Sys.time(),6,7),substr(Sys.time(),9,10),substr(Sys.time(),12,13),substr(Sys.time(),15,16),substr(Sys.time(),18,19),sep="")
+#
+# Capturando los datos de Twitter para crear el primer archivo
+captura00 <-searchTwitter(palabra_clave, n=nro_tweets, "es")
+tweets00 = ldply(captura00, function(t) t$toDataFrame() )
+#
+# Guardando los tweets en archivo CSV
+#
+archivo00 <- paste(paste("tweets","es",palabra_clave,fechahora,sep="_"),".csv",sep="")
+rutaarchivo00 <- paste("C:/BTT/archivos/",archivo00,sep="")
+write.csv(tweets00, file = rutaarchivo00)
+}
