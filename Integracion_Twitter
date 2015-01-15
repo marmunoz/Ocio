@@ -239,36 +239,21 @@ score.sentiment = function(sentences, pos.words, neg.words, .progress='none'){
  	db <- mongo.create("backend.aws.ittravelservices.com:37017")
  	if (mongo.is.connected(mongo)) {
 
-#-- TAN		for(t in 1:TweetNumber){
-#-- TAN			d=paste(HASHTAG[t],USUARIOS[t],TWEETS[t],URL[t],COMENTARIOS[t],SENTIMIENTO[t],date(), sep=" , ")
-#-- TAN 			buf <- mongo.bson.buffer.create()
-#-- TAN			mongo.bson.buffer.append.object(buf, "R_ENJOY", d)
-#-- TAN			b <- mongo.bson.from.buffer(buf)
-#-- TAN 			mongo.insert(mongo, "twitter.DATOS", b)
-#-- TAN 		}
-		#-------------------
-		#    TAN
-		#-------------------
 		for(t in 1:TweetNumber){
-#-- TAN			d=paste(HASHTAG[t],USUARIOS[t],TWEETS[t],URL[t],COMENTARIOS[t],SENTIMIENTO[t],date(), sep=" , ")
 			if (URL[t]!=0) {
  				buf <- mongo.bson.buffer.create()
-				mongo.bson.buffer.append.object(buf, "hashtag", HASHTAG[t])
-				mongo.bson.buffer.append.object(buf, "usuarios", USUARIOS[t])
-				mongo.bson.buffer.append.object(buf, "retweets", TWEETS[t])
-				mongo.bson.buffer.append.object(buf, "url", URL[t])
-				mongo.bson.buffer.append.object(buf, "comentarios", COMENTARIOS[t])
-				mongo.bson.buffer.append.object(buf, "sentimiento", SENTIMIENTO[t])
-				mongo.bson.buffer.append.object(buf, "fecha",date())
+				mongo.bson.buffer.append(buf, "hashtag", HASHTAG[t])
+				mongo.bson.buffer.append(buf, "usuarios", USUARIOS[t])
+				mongo.bson.buffer.append(buf, "retweets", TWEETS[t])
+				mongo.bson.buffer.append(buf, "url", URL[t])
+				mongo.bson.buffer.append(buf, "comentarios", COMENTARIOS[t])
+				mongo.bson.buffer.append(buf, "sentimiento", SENTIMIENTO[t])
+				mongo.bson.buffer.append(buf, "fecha",date())
 				b <- mongo.bson.from.buffer(buf)
 	 			mongo.insert(mongo, "twitter.datos3", b)
  			}
  		}
-
-
-
 	}
-
 }#cierro bucle principal
 
 
