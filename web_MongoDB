@@ -3,11 +3,11 @@
 <?php
 	 //conectamos con mongo, suponiendo que lo haces en local (localhost)
 	$m = new MongoClient("mongodb://testUser:testPass@localhost");
-	$db = $m->selectDB('tfm'); // nombre de la base de datos
+	$db = $m->selectDB('twitter'); // nombre de la base de datos
 	$db->authenticate("admin", " My password ");
-	$info = $db->selectCollection("info"); //seleccionar la colección
+	$info = $db->selectCollection("datos3"); //seleccionar la colección
 	$msgs = $info->find(); //busca y filtra la colección
-	foreach ($msgs as $msg) { //recorre la colección en busca de la columna 'visitantes'
-		echo "VISITANTES:".$msg['visitantes']."\n";
+	foreach ($msgs as $msg) { //recorre la colección en busca de la columna 'text'
+		echo "TEXTOS:".$msg['text']."\n";
 	}
 ?>
