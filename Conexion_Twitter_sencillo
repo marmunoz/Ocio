@@ -59,8 +59,10 @@ for(t in 1:num_tweets){
 				mongo.bson.buffer.append(buf, "RT",tweets00$retweeted)
 				mongo.bson.buffer.append(buf, "IsRT",tweets00$isRetweet)
 				mongo.bson.buffer.append(buf, "NumRT",tweets00$retweetCount)
+				mongo.bson.buffer.append(buf, "Sentimientos", TRUE)
+				mongo.bson.buffer.append(buf, "Fecha", fechahora)
 				b <- mongo.bson.from.buffer(buf)
-	 			mongo.insert(mongo, "twitter.datos3", b)
+	 			mongo.insert(mongo, "twitter.datos_twitter", b)
  			}
  		}
 }
