@@ -67,5 +67,33 @@ for(t in 1:num_tweets){
  		}
 }
 
+#---------------------------------------------------------------------------------
+#analizar tweets
+# Eliminando los signos de puntuacion, convirtiendo a minusculas, eliminando números ... 
+texto_tweets <- Corpus(VectorSource(tweets$text))
+# Eliminando los signos de puntuacion, convirtiendo a minusculas, eliminando números ... 
+texto_tweets <- tm_map(texto_tweets, removePunctuation)
+texto_tweets <- tm_map(texto_tweets, content_transformer(tolower)) 
+texto_tweets <- tm_map(texto_tweets, removeNumbers)
 
+# Eliminando stopwords
+conectores01 <- c(stopwords("SMART"),palabraclave,stopwords("es"))
+texto_tweets <- tm_map(texto_tweets, removeWords, conectores01)
+#-------------------------------------------------------------------------------
+# Eliminando espacios en blanco dobles
+texto_tweets <- tm_map(texto_tweets, stripWhitespace)
+#-------------------------------------------------------------------------------
+# Creando la matriz de terminos
+tdm01 <- TermDocumentMatrix(texto_tweets)
+tf01 <- rowSums(as.matrix(tdm01))
+tfordered01 <- sort(tf01, decreasing=TRUE)
+head(tf01)
+#-------------------------------------------------------------------------------
+# Obteniendo las palabras mas recurrentes
+palabrastop01 <-tfordered01[1:cantidad]
+titulo01 <- paste("Top",cantidad," de palabras relacionadas a ",toupper(palabraclave)," en spanish",sep="")
+# Dibujando la nube de palabras top
+par(mfrow=c(1,2))
+wordcloud(names(palabrastop01), palabrastop01, min.freq=cantidad, random.order=FALSE)
+title(main=titulo01)
 
