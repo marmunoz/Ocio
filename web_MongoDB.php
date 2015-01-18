@@ -5,7 +5,7 @@
 	$m = new MongoClient("mongodb://testUser:testPass@localhost");     -- pongo datos de prueba, no lo publico
 	$db = $m->selectDB('twitter'); // nombre de la base de datos
 	$db->authenticate("admin", " My password ");                       -- pongo datos de prueba, no lo publico
-	$info = $db->selectCollection("datos3"); //seleccionar la colección
+	$info = $db->selectCollection("datos_twitter"); //seleccionar la colección
 	$msgs = $info->find(); //busca y filtra la colección
 	foreach ($msgs as $msg) { //recorre la colección en busca de la columna 'text'
 		echo "TEXTOS:".$msg['text']."\n";
