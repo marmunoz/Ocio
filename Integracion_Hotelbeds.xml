@@ -1,8 +1,20 @@
 # Petición de DESTINO.
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bar="http://www./"> URL oclultada, por temas de confidencialidad
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bar:GetDestinations>
+         <!--Optional:-->
+         <GetDestinationsRQ locale="es_ES" echo="" brandCode="050013" categoryCode="c8117d9b-9209-4f4c">
+            <Authentication user="***" password="***"/>
+         </GetDestinationsRQ>
+      </bar:GetDestinations>
+   </soapenv:Body>
+</soapenv:Envelope>
+#--------------------------------------------------------------------------------------------------------------------
 # Ejemplo de resultado.
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Body>
-      <ns2:GetDestinationsResponse xmlns:ns2="http://www./">  --URL comentada, por temas de confidencialidad
+      <ns2:GetDestinationsResponse xmlns:ns2="http://www./">  --URL oclultada, por temas de confidencialidad
          <GetDestinationsRS echo="">
             <DestinationList destinationCode="AD" destinationName="Andorra" destinationType="COUNTRY" searchAllowed="false">
                <ChildDestinations destinationCode="CAHVN" destinationName="CAHVN" destinationType="PROVINCE" searchAllowed="false">
@@ -13,7 +25,35 @@
                </ChildDestinations>
                
 
-
+#--------------------------------------------------------------------------------------------------------------------
 # Petición de PRODUCTO.
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bar="http://www.../">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <bar:GetProducts>
+         <!--Optional:-->
+         <GetProductsRQ locale="es_ES" echo="" brandCode="050013" categoryCode="c8117d9b-9209-4f4c">
+            <Authentication user="***" password="***"/>
+         </GetProductsRQ>
+      </bar:GetProducts>
+   </soapenv:Body>
+</soapenv:Envelope>
+#--------------------------------------------------------------------------------------------------------------------
 # Ejemplo de resultado.
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns2:GetProductsResponse xmlns:ns2="http://www..../">
+         <GetProductsRS echo="">
+            <ProductsInfoList code="12213" name="Balneo Aladin" address="11, avenue du Général Leclerc 65112 Cauterets cedex" postalCode="65112" countryCode="FR" countryName="Francia" provinceCode="BUCEQ" provinceName="HAUTES-PYRENEES" cityCode="AJSJR" cityName="CAUTERETS" latitude="-.114276" longitude="42.889787" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c1d012ba-2dd6-49d4" categoryName="Residencia"/>
+            <ProductsInfoList code="58478" name="Charmettoger" address="Charmettoger village/ arc 1800, " postalCode="73700" countryCode="FR" countryName="Francia" provinceCode="BUCFB" provinceName="SAVOY" cityCode="CEEQP" cityName="LES ARCS, RODANO-ALPES" latitude="6.780129857361317" longitude="45.56960999965668" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c6779439-d4f6-4f48-8052-38ac1b298544" categoryName="2 Estrellas"/>
+            <ProductsInfoList code="41497" name="Cosmos Hotel i Apartments" countryCode="AD" countryName="Andorra" provinceCode="CAHVD" provinceName="Escaldes-Engordany" cityCode="AFGLL" cityName="Les Escaldes (Poblacion)" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="61a84406-2def-4ad4-85ca-7e8dc78ced8a" categoryName="3 Estrellas"/>
+            <ProductsInfoList code="41123" name="Dauro Granada" countryCode="ES" countryName="España" provinceCode="BUJRW" provinceName="GRANADA (ANDALUCÍA)" cityCode="GRX" cityName="GRANADA" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="61a84406-2def-4ad4-85ca-7e8dc78ced8a" categoryName="3 Estrellas"/>
+            <ProductsInfoList code="39808" name="Del Meligar" countryCode="AD" countryName="Andorra" provinceCode="CAHVH" provinceName="Encamp" cityCode="AFGLJ" cityName="Encamp (Poblacion)" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c8432de4-7804-4bbc" categoryName="Aparthotel 3 Estrellas"/>
+
+-- elimino el resto de datos del catálogo 
+
+         </GetProductsRS>
+      </ns2:GetProductsResponse>
+   </soap:Body>
+</soap:Envelope>
 
