@@ -44,11 +44,11 @@
    <soap:Body>
       <ns2:GetProductsResponse xmlns:ns2="http://www..../">
          <GetProductsRS echo="">
-            <ProductsInfoList code="12213" name="Balneo Aladin" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/04/2014" data_to="30/10/2014" price_adults=10.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12214" name="Jardines Alfabia" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/03/2014" data_to="30/11/2014" price_adults=15.00 price_childs=15.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12215" name="Safari ZOO" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/10/2014" price_adults=7.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12216" name="Aqualand" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/11/2014" price_adults=24.50 price_childs=16.00 Free_Sale="Y" currency="EUR"/>
-            
+            <ProductsInfoList code="3009" name="Palma Aquarium - entrada" countryCode="ES" citycode="PMI" categoryName="Entrada general" data_from="03/07/2013" data_to="31/03/2014" price_adults=23.00 price_childs=16.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="3010" name="Tren de Soller - ticket" countryCode="ES" citycode="PMI" categoryName="Tren y TranvÍa billete ida y vuelta + ENTRADA GRATUITA MUSEO CAN PRUNERA" data_from="03/07/2013" data_to="31/10/2013" price_adults=28.00 price_childs=14.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="3011" name="Formentor concierto clasico" countryCode="ES" citycode="PMI" categoryName="ASIENTOS - PLATA" data_from="13/09/2013" data_to="13/09/2013" price_adults=150.00 price_childs=150.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="3012" name="Formentor concierto clasico" countryCode="ES" citycode="PMI" categoryName="ASIENTOS -ORO" data_from="13/09/2013" data_to="13/09/2013" price_adults=240.00 price_childs=240.00 Free_Sale="Y" currency="EUR"/>
+ 
 -- elimino el resto de datos del catálogo 
 
          </GetProductsRS>
