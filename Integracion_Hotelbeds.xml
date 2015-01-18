@@ -44,12 +44,11 @@
    <soap:Body>
       <ns2:GetProductsResponse xmlns:ns2="http://www..../">
          <GetProductsRS echo="">
-            <ProductsInfoList code="12213" name="Balneo Aladin" address="11, avenue du Général Leclerc 65112 Cauterets cedex" postalCode="65112" countryCode="FR" countryName="Francia" provinceCode="BUCEQ" provinceName="HAUTES-PYRENEES" cityCode="AJSJR" cityName="CAUTERETS" latitude="-.114276" longitude="42.889787" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c1d012ba-2dd6-49d4" categoryName="Residencia"/>
-            <ProductsInfoList code="58478" name="Charmettoger" address="Charmettoger village/ arc 1800, " postalCode="73700" countryCode="FR" countryName="Francia" provinceCode="BUCFB" provinceName="SAVOY" cityCode="CEEQP" cityName="LES ARCS, RODANO-ALPES" latitude="6.780129857361317" longitude="45.56960999965668" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c6779439-d4f6-4f48-8052-38ac1b298544" categoryName="2 Estrellas"/>
-            <ProductsInfoList code="41497" name="Cosmos Hotel i Apartments" countryCode="AD" countryName="Andorra" provinceCode="CAHVD" provinceName="Escaldes-Engordany" cityCode="AFGLL" cityName="Les Escaldes (Poblacion)" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="61a84406-2def-4ad4-85ca-7e8dc78ced8a" categoryName="3 Estrellas"/>
-            <ProductsInfoList code="41123" name="Dauro Granada" countryCode="ES" countryName="España" provinceCode="BUJRW" provinceName="GRANADA (ANDALUCÍA)" cityCode="GRX" cityName="GRANADA" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="61a84406-2def-4ad4-85ca-7e8dc78ced8a" categoryName="3 Estrellas"/>
-            <ProductsInfoList code="39808" name="Del Meligar" countryCode="AD" countryName="Andorra" provinceCode="CAHVH" provinceName="Encamp" cityCode="AFGLJ" cityName="Encamp (Poblacion)" lodgingTypeCode="9878e8c4-a862-4d02-91b2-a90753d614ba" lodgingTypeName="HOTEL" categoryCode="c8432de4-7804-4bbc" categoryName="Aparthotel 3 Estrellas"/>
-
+            <ProductsInfoList code="12213" name="Balneo Aladin" countryCode="ES" categoryName="Naturaleza" data_from="01/04/2014" data_to="30/10/2014" price_adults=10.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12214" name="Jardines Alfabia" countryCode="ES" categoryName="Naturaleza" data_from="01/03/2014" data_to="30/11/2014" price_adults=15.00 price_childs=15.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12215" name="Safari ZOO" countryCode="ES" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/10/2014" price_adults=7.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12216" name="Aqualand" countryCode="ES" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/11/2014" price_adults=24.50 price_childs=16.00 Free_Sale="Y" currency="EUR"/>
+            
 -- elimino el resto de datos del catálogo 
 
          </GetProductsRS>
