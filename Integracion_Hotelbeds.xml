@@ -44,10 +44,10 @@
    <soap:Body>
       <ns2:GetProductsResponse xmlns:ns2="http://www..../">
          <GetProductsRS echo="">
-            <ProductsInfoList code="12213" name="Balneo Aladin" countryCode="ES" categoryName="Naturaleza" data_from="01/04/2014" data_to="30/10/2014" price_adults=10.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12214" name="Jardines Alfabia" countryCode="ES" categoryName="Naturaleza" data_from="01/03/2014" data_to="30/11/2014" price_adults=15.00 price_childs=15.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12215" name="Safari ZOO" countryCode="ES" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/10/2014" price_adults=7.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
-            <ProductsInfoList code="12216" name="Aqualand" countryCode="ES" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/11/2014" price_adults=24.50 price_childs=16.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12213" name="Balneo Aladin" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/04/2014" data_to="30/10/2014" price_adults=10.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12214" name="Jardines Alfabia" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/03/2014" data_to="30/11/2014" price_adults=15.00 price_childs=15.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12215" name="Safari ZOO" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/10/2014" price_adults=7.00 price_childs=5.00 Free_Sale="Y" currency="EUR"/>
+            <ProductsInfoList code="12216" name="Aqualand" countryCode="ES" citycode="PMI" categoryName="Naturaleza" data_from="01/05/2014" data_to="30/11/2014" price_adults=24.50 price_childs=16.00 Free_Sale="Y" currency="EUR"/>
             
 -- elimino el resto de datos del catálogo 
 
