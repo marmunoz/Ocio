@@ -1,0 +1,19 @@
+# Petición de DESTINO.
+# Ejemplo de resultado.
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns2:GetDestinationsResponse xmlns:ns2="http://www./">  --URL comentada, por temas de confidencialidad
+         <GetDestinationsRS echo="">
+            <DestinationList destinationCode="AD" destinationName="Andorra" destinationType="COUNTRY" searchAllowed="false">
+               <ChildDestinations destinationCode="CAHVN" destinationName="CAHVN" destinationType="PROVINCE" searchAllowed="false">
+                  <ChildDestinations destinationCode="0ST" destinationName="SANT JULIA DE LORIA" destinationType="CITY" searchAllowed="true"/>
+                  <ChildDestinations destinationCode="COMERCIAL19" destinationName="Grandvalira" destinationType="COMMERCIAL_DESTINATION" searchAllowed="true">
+                     <ChildDestinations destinationCode="0ST" destinationName="SANT JULIA DE LORIA" destinationType="CITY" searchAllowed="true"/>
+                  </ChildDestinations>
+               </ChildDestinations>
+               
+
+
+# Petición de PRODUCTO.
+# Ejemplo de resultado.
+
