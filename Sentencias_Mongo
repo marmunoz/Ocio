@@ -50,4 +50,8 @@ tiempo_antelacion_reserva: "Consultar", venta_libre: "SI", descuento: "0", edad_
 #
 #
 #
-
+#-----------------------------------------------------------------------------------------------------
+# Update de la collection, añadiendo una columna llamada "positivo" y asignando el resultado de lo analizado 
+#
+#
+#
