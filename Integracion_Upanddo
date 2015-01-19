@@ -1,0 +1,48 @@
+#Integración UpdandDo
+#---------------------------------------------------------------------------------
+[{
+"Pais":"ES",
+"Codigo":105,
+"Nombre":"ELS CALDERERS Els Calderers es una finca de belleza asombrosa que le descubrirá la vida en Mallorca durante el siglo XVIII. El mobiliario, manuscritos, cartas, armas, maquinaria y herramientas se han preservado para hacerle sentir parte de la época. Se encuentra al pie de la Hermita de Bonany, en el municipio de Sant Joan."
+"Lugar":"PMI",
+"Precio_desde":7,5
+},{
+"Pais":"ES",
+"Codigo":106,
+"Nombre":"CUEVAS DE ARTA Las cuevas de Artá están situadas en la costa marítima del término municipal de Capdepera, en el Cap Vermell, rodeadas de montañas que se levantan sobre el mar. Altas estalagmitas se levantan del suelo, elegantes y esbeltas, semejando vagamente formas humanas, espectros misteriosos, inmóviles, rígidos, indiferentes a la mirada del hombre y con esa imponente superioridad de las maravillosas creaciones de la naturaleza."
+"Lugar":"PMI",
+"Precio_desde":10
+},{
+"Pais":"ES",
+"Codigo":107,
+"Nombre":"LA GRANJA DE ESPORLES La Granja de Esporles, una visita cultural repleta de historia, tradición, naturaleza y gastronomía ubicada en el corazón de Mallorca, la Serra de Tramuntana. La familia Seguí, propietaria de La Granja de Esporles, les da la más cordial bienvenida a su finca privada y les desea una inolvidable visita. Todo lo que podrán admirar es una auténtica muestra del espíritu aún vivo de Mallorca, resultado de un cruce de culturas que la hacen única, y testimonio de nuestro esfuerzo ilusionado para que no caiga en el olvido."
+"Lugar":"PMI",
+"Precio_desde":13
+},{
+"Pais":"ES",
+"Codigo":108,
+"Nombre":"DIGITHAMS Las Cuevas dels Hams se formaron hace millones de años a partir de un río subterráneo que desembocaba en el mar y fueron descubiertas accidentalmente por Pedro Caldentey en 1905. Se caracterizan por dos cosas: las formaciones ramificadas que se parecen a anzuelos (hams en mallorquín) de diversas tonalidades, y la existencia de unos curiosos crustáceos prehistóricos y ciegos que viven en los lagos."
+"Lugar":"PMI",
+"Precio_desde":17
+},{
+"Pais":"ES",
+"Codigo":109,
+"Nombre":"PALMA AQUARIUM Palma Aquarium es un espectacular parque marino que recrea los hábitats y ecosistemas de mares y océanos. Consta de 55 acuarios donde 8000 ejemplares ofrecen una muestra de la fauna y flora procedentes del Mar Mediterráneo y de los océanos Índico, Atlántico y Pacífico. El parque ofrece vivir una experiencia única e inolvidable con el objetivo de fomentar la admiración por la belleza del mar."
+"Lugar":"PMI",
+"Precio_desde":19,5
+}]
+# Función para detectar duplicados.
+#---------------------------------------------------------------------------------
+#
+#
+#
+#
+# Función para detectar diferencias de precio.
+#---------------------------------------------------------------------------------
+#
+#
+#
+#
+#
+#
+#
