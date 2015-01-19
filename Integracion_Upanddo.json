@@ -1,0 +1,57 @@
+#Integración UpdandDo
+#---------------------------------------------------------------------------------
+#
+
+[{
+"Ciudad":"Alger",
+"Units":"Sum(Area in Sq. km)",
+"Population (thousands)":2988,
+"Sum(Area in Sq. km)":1190,
+"Population Density (persons/sq. km)":2511
+},{
+"Ciudad":"Sétif",
+"Units":"Sum(Area in Sq. km)",
+"Population (thousands)":1490,
+"Sum(Area in Sq. km)":6504,
+"Population Density (persons/sq. km)":229
+},{
+"Ciudad":"Oran",
+"Units":"Sum(Area in Sq. km)",
+"Population (thousands)":1454,
+"Sum(Area in Sq. km)":2121,
+"Population Density (persons/sq. km)":686
+},{
+"Ciudad":"Tizi Ouzou",
+"Units":"Sum(Area in Sq. km)",
+"Population (thousands)":1128,
+"Sum(Area in Sq. km)":3568,
+"Population Density (persons/sq. km)":316
+},{
+"Ciudad":"Batna",
+"Units":"Sum(Area in Sq. km)",
+"Population (thousands)":1120,
+"Sum(Area in Sq. km)":12192,
+"Population Density (persons/sq. km)":92
+}]
+
+
+
+
+
+
+
+# Función para detectar duplicados.
+#---------------------------------------------------------------------------------
+#
+#
+#
+#
+# Función para detectar diferencias de precio.
+#---------------------------------------------------------------------------------
+#
+#
+#
+#
+#
+#
+#
